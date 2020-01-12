@@ -1,0 +1,37 @@
+<html>
+	<body>
+	@section('sidebar')
+		<h2>Task #{{$taskDTO->getId()}}</h2>
+		
+		<table>
+			<tr>
+				<td>id</td>
+				<td>{{$taskDTO->getId()}}</td>
+			</tr>
+			<tr>
+				<td>title</td>
+				<td>{{$taskDTO->getTitle()}}</td>
+			</tr>
+			<tr>
+				<td>content</td>
+				<td>{{$taskDTO->getContent()}}</td>
+			</tr>
+			<tr>
+				<td>status</td>
+				<td>{{$taskDTO->getStatus()}}</td>
+			</tr>
+			<tr>
+				<td>user_id</td>
+				<td>{{$taskDTO->getUserId()}}</td>
+			</tr>
+			<tr>
+				<td>created_at</td>
+				<td>{{$taskDTO->getCreatedAt()}}</td>
+			</tr>
+			<tr>
+				<td>updated_at</td>
+				<td>{{$taskDTO->getUpdatedAt()}}</td>
+			</tr>
+		</table>
+	</body>
+</html>
